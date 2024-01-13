@@ -8,6 +8,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.text-gray {
+  color: #727272;
+}
+
 .btn-primary {
   background-color: #ff900e;
   border-radius: 8px;
@@ -71,7 +75,6 @@ nav li a {
 }
 
 .banner-description {
-  color: #727272;
   font-size: 1rem;
   font-weight: 400;
   margin: 20px 0;
@@ -82,6 +85,49 @@ nav li a {
   margin-top: 50px;
 }
 
+/* main section styles */
+main {
+  max-width: 1440px;
+  margin: 70px auto;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+}
+
+.team-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-content {
+  padding: 0 70px;
+}
+
+.team-title {
+  font-size: 2.8rem;
+}
+
+.quick-list {
+  font-weight: 500;
+}
+
+.of-our {
+  color: #131313;
+  font-weight: 700;
+}
+
+.features {
+  color: #ff900e;
+  font-weight: 700;
+}
+
+.team-description {
+  margin: 25px 0;
+}
+
 /* responsive styles */
 
 /* small devices */
@@ -90,8 +136,18 @@ nav li a {
     padding: 20px;
   }
 
-  nav {
+  nav,
+  .team-container {
     flex-direction: column;
+  }
+
+  .team-img {
+    grid-template-columns: 1fr;
+  }
+
+  .team-content {
+    margin-top: 30px;
+    padding: 0 20px;
   }
 }
 
@@ -101,7 +157,13 @@ nav li a {
     padding: 50px;
   }
 
-  nav {
+  nav,
+  .team-container {
     flex-direction: column;
+  }
+
+  .team-content {
+    margin-top: 30px;
+    padding: 0 40px;
   }
 }
